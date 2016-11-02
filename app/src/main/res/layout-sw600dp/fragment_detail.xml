@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/yellow"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="224dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/black"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:background="@color/black"
+            app:cardCornerRadius="7dp"
+            app:cardBackgroundColor="@color/yellow">
+
+            <ImageView
+                android:id="@+id/detail_tablet"
+                android:layout_width="match_parent"
+                android:layout_height="237dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/title_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:paddingLeft="10dp"
+                android:text="teste"
+                android:textColor="@color/yellow"
+                android:textSize="60dp" />
+        </android.support.v7.widget.CardView>
+
+    </FrameLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".HoroscopoDetailActivity"
+
+        tools:showIn="@layout/activity_horoscopo_item">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/frameLayout"
+            android:layout_marginTop="0dp"
+            android:background="@color/black">
+
+            <TextView
+                android:id="@+id/txtdata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/frag_item_data"
+                android:layout_alignStart="@+id/frag_item_data"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:text="@string/data"
+                android:textColor="@color/yellow" />
+
+            <TextView
+                android:id="@+id/frag_item_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtdata"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="teste data"
+                android:textColor="@color/yellow" />
+
+            <TextView
+                android:id="@+id/txt_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frag_item_data"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="@string/messagem"
+                android:textColor="@color/yellow" />
+
+            <TextView
+                android:id="@+id/frag_item_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_msg"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="teste mensagem"
+                android:textColor="@color/yellow" />
+
+
+     <!--       <TextView
+                android:id="@+id/txtintensitivy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frag_item_msg"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="@string/intensity"
+                android:textColor="#ffff" />
+
+            <TextView
+                android:id="@+id/frag_item_itensity"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtintensitivy"
+                android:text="49%"
+                android:textColor="#ffff" />
+
+            <TextView
+                android:id="@+id/keyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frag_item_itensity"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:text="@string/keyboards"
+
+                android:textColor="#ffff" />
+
+            <TextView
+                android:id="@+id/frag_item_keywords"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/keyboard"
+                android:gravity="center"
+                android:text="49%"
+                android:textColor="#ffff" />
+
+            <TextView
+                android:id="@+id/txtmood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frag_item_keywords"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="@string/mood"
+                android:textColor="#ffff" />
+
+            <TextView
+                android:id="@+id/frag_item_mood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/txtmood"
+                android:text="49%"
+                android:textColor="#ffff" />-->
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
+

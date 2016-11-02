@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="logos">
+    <item>@drawable/aries</item>
+    <item>@drawable/taurus</item>
+    <item>@drawable/gemini</item>
+    <item>@drawable/cancer</item>
+    <item>@drawable/leo</item>
+    <item>@drawable/virgo</item>
+    <item>@drawable/libra</item>
+    <item>@drawable/scorpio</item>
+    <item>@drawable/sagitarius</item>
+    <item>@drawable/capricorn</item>
+    <item>@drawable/aquarius</item>
+    <item>@drawable/pisces</item>
+
+</array>
+    <string-array name="horosc_array">
+        <item>aries</item>
+        <item>taurus</item>
+        <item>gemini</item>
+        <item>cancer</item>
+        <item>leo</item>
+        <item>virgo</item>
+        <item>libra</item>
+        <item>scorpio</item>
+        <item>sagittarius</item>
+        <item>capricorn</item>
+        <item>aquarius</item>
+        <item>pisces</item>
+    </string-array>
+</resources>
